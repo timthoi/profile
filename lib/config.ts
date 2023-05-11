@@ -136,7 +136,7 @@ export const redisNamespace: string | null = getEnv(
 
 export const isServer = typeof window === 'undefined'
 
-export const port = getEnv('PORT', '3000')
+export const port = getEnv('PORT', '8081')
 export const host = isDev ? `http://localhost:${port}` : `https://${domain}`
 export const apiHost = isDev
   ? host
